@@ -1,0 +1,28 @@
+= Binary components =
+
+This repository contain components that we can currently release only in binary format.
+Further license agreements with third parties may allow to release some of these components as source in the future.
+
+Contents:
+
+== ti ==
+
+This directory contains some components part of the DaVinci system that are originally part of the TIEVM package from TI.
+They are integral for using multimedia on the system, and some are needed to rebuild VLC.
+More in detail:
+
+=== lib ===
+Contain libraries that are part of Codec Engine (ARM part needed to talk with DSP codecs), which are needed to rebuild some VLC plugins.
+Also contain TI helper libraries and codec-server specific libraries.
+
+=== codec ===
+
+Contain the codec servers, which are packs of codecs that are loaded to the DSP and run there.
+
+=== module ===
+
+Kernel modules needed as bridge between DSP and Linux (dsplink) and to allocate out-of-kernel contiguous memory (cmemk).
+
+=== include ===
+
+Headers for the above libraries.
