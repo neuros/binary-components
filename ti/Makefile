@@ -45,3 +45,6 @@ install:
 	@echo Installing config toolchain
 	mkdir -p $(TOOLCHAIN_USR_INSTALL)/bin
 	install -m 776 ticel-config $(TOOLCHAIN_USR_INSTALL)/bin/ticel-config
+
+	make -C modules $@
+
