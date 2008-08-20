@@ -2,7 +2,7 @@
 
 LIBS=""
 for lib in \
-    decode_x470MV.a \
+    encodedecode_x470MV.a \
     TraceUtil.a \
     bioslog.a \
     video.a \
